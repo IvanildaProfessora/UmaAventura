@@ -1,0 +1,75 @@
+audio {
+    width: 300px; /* Define a largura do controle de áudio */
+    margin: 20px auto; /* Centraliza o controle horizontalmente */
+    display: block; /* Garante que o áudio seja um bloco e respeite o margin auto */
+}
+/* Estiliza o contêiner com o GIF de fundo */
+.container {
+    width: 1000px; /* Largura do contêiner */
+    height: 700px; /* Altura do contêiner */
+    background-image: url('fogos1.gif'); /* Caminho para o GIF de fundo */
+    background-size: cover; /* Faz o GIF cobrir todo o contêiner */
+    background-position: center; /* Centraliza o GIF de fundo */
+    position: relative; /* Define o contêiner como referência para posicionamento da imagem na frente */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estiliza a imagem na frente */
+.imagem-frente {
+    width: 500px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    position: relative; /* Mantém a imagem relativa ao contêiner */
+    z-index: 1; /* Garante que a imagem fique na frente do fundo */
+}
+body {
+    background-color: #4f504d;
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 0;
+}
+header {
+    border-bottom: solid 2px #4f504d;
+    padding: 20px;
+    font-size: 32px;
+    color: rgb(231, 240, 238);
+}
+.chamada {
+    background: #4f504d;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.chamada-texto {
+    margin-right: 7%;
+}
+button {
+    background-color: #1270a7;
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display:block;
+}
+
+main {
+    text-align: center;
+    max-width: 90%;
+    margin-top: 10%;
+}
+
+img {
+    margin-top: 0%;
+    max-width: 90%;
+}
